@@ -10,7 +10,7 @@ class Client(ABC):
         self.__address: dict = address
 
     @property
-    def create_account(self, *args, **kwargs):
+    def new_client(self, *args, **kwargs):
         self.__id += 1
         self.__accounts.append(args)
         for self.Client, self.__address in kwargs.items():
