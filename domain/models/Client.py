@@ -1,8 +1,7 @@
 from abc import ABC
-from datetime import datetime
 
 
-class Client:
+class Client(ABC):
     id: int = 1
 
     def __int__(self, *args, **kwargs):
