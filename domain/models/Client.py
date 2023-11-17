@@ -1,4 +1,4 @@
-from abc import ABC
+from abc import ABC, abstractmethod
 
 
 class Client(ABC):
@@ -9,7 +9,7 @@ class Client(ABC):
         self.__accounts: list = account
         self.__address: dict = address
 
-    @property
+    @abstractmethod
     def new_client(self, *args, **kwargs):
         self.__id += 1
         self.__accounts.append(args)
