@@ -33,3 +33,6 @@ class Account:
             return result
         else:
             return "Amount incorrect"
+
+    def extract(self):
+        return self.__extract.extract()
