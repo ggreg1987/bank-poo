@@ -24,3 +24,12 @@ class Account:
             result = f"Draw out R${value}"
             self.__extract.add_extract(result)
             return result
+
+    def deposit(self, value: float):
+        if value > 0:
+            self.balance += value
+            result = f"deposited R${value}"
+            self.__extract.add_extract(result)
+            return result
+        else:
+            return "Amount incorrect"
