@@ -10,3 +10,6 @@ class Account:
     def __int__(self, agency: str, client: PhysicalPerson):
         self.__agency = agency
         self.__client = client
+        self.__extract = Extract()
+
+
