@@ -12,4 +12,5 @@ class Account:
         self.__client = client
         self.__extract = Extract()
 
-
+    def new_account(self, name, date_birth, cpf, agency) -> int:
+        return self.__client.new_client((name, date_birth, cpf, agency), {"street", "number"})
