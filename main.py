@@ -3,10 +3,6 @@ from domain.models.Account import Account
 
 class Main:
     __account = Account
-    your_name = input("What's your name?")
-    print(f"""
-    Wellcome {your_name} to DIO's BANK!!!
-    """)
 
     @classmethod
     def menu(cls):
@@ -21,6 +17,11 @@ class Main:
         """)
 
     def start(self):
+        your_name = input("What's your name?")
+        print(f"""
+            Wellcome {your_name} to DIO's BANK!!!
+            """)
+
         option = 0
 
         while option != 5:
@@ -36,3 +37,8 @@ class Main:
                     number = int(input("Number"))
                     new_account = self.__account.new_account(name, date_birth, cpf, agency, street, number)
                     print(new_account)
+
+                case 2:
+                    amount = float(input("How much you need?"))
+                    result = self.__account.deposit(amount)
+                    print(result)
