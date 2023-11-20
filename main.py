@@ -2,7 +2,8 @@ from domain.models.Account import Account
 
 
 class Main:
-    __account = Account
+    def __int__(self, account: Account):
+        self.__account = account
 
     @classmethod
     def menu(cls):
@@ -51,3 +52,7 @@ class Main:
                 case 4:
                     result = self.__account.extract()
                     print(result)
+
+                case 5:
+                    print("Thanks for use DIO's Bank")
+                    break

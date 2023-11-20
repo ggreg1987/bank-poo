@@ -7,10 +7,10 @@ class Account:
     WITHDRAW_LIMIT = 500
     withdraw_limit_per_day = 3
 
-    def __int__(self, agency: str, client: PhysicalPerson):
+    def __int__(self, agency: str, client: PhysicalPerson, extract: Extract):
         self.__agency = agency
         self.__client = client
-        self.__extract = Extract()
+        self.__extract = extract
 
     def new_account(self, name, date_birth, cpf, agency, street, number):
         account: tuple = (name, date_birth, cpf, agency)
