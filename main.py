@@ -1,4 +1,4 @@
-from domain.models.Account import Account
+from domain.models import Account
 
 
 class Main:
@@ -55,3 +55,6 @@ class Main:
                 case 5:
                     print("Thanks for use DIO's Bank")
                     break
+
+
+Main.start()

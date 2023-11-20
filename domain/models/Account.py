@@ -1,5 +1,5 @@
-from Extract import Extract
-from PhysicalPerson import PhysicalPerson
+import Extract
+import PhysicalPerson
 
 
 class Account:
