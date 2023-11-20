@@ -12,11 +12,10 @@ class Account:
         self.__client = client
         self.__extract = Extract()
 
-    def new_account(self, name, date_birth, cpf, agency, street, number) -> str:
+    def new_account(self, name, date_birth, cpf, agency, street, number):
         account: tuple = (name, date_birth, cpf, agency)
         address: dict = {"street": street, "number": number}
         return self.__client.new_client(account, address)
-
 
     def withdraw(self, value: float):
         if value > self.WITHDRAW_LIMIT or value < 0 or self.withdraw_limit_per_day == 0:
