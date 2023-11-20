@@ -8,7 +8,8 @@ class Main:
     Wellcome {your_name} to DIO's BANK!!!
     """)
 
-    def menu(self):
+    @classmethod
+    def menu(cls):
         print(f"""
         CHOOSE YOUR OPTION
 
