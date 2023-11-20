@@ -47,3 +47,7 @@ class Main:
                     amount = float(input("how much you need"))
                     result = self.__account.withdraw(amount)
                     print(result)
+
+                case 4:
+                    result = self.__account.extract()
+                    print(result)
