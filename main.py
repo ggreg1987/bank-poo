@@ -39,6 +39,11 @@ class Main:
                     print(new_account)
 
                 case 2:
-                    amount = float(input("How much you need?"))
+                    amount = float(input("How much you will deposit?"))
                     result = self.__account.deposit(amount)
+                    print(result)
+
+                case 3:
+                    amount = float(input("how much you need"))
+                    result = self.__account.withdraw(amount)
                     print(result)
