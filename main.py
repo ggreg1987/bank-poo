@@ -8,7 +8,7 @@ class Main:
     Wellcome {your_name} to DIO's BANK!!!
     """)
 
-    def start_app(self):
+    def menu(self):
         print(f"""
         CHOOSE YOUR OPTION
 
@@ -18,9 +18,12 @@ class Main:
         4 - EXTRACT
         5 - EXIT
         """)
+
+    def start(self):
         option = 0
 
         while option != 5:
+            self.menu()
             option = int(input())
             match option:
                 case 1:
