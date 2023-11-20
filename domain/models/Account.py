@@ -37,4 +37,4 @@ class Account:
             return "Amount incorrect"
 
     def extract(self):
-        return self.__extract.extract()
+        self.__extract.extract_list()

@@ -1,11 +1,12 @@
 
 class Extract:
-    extract: list
+    def __int__(self, extract: list):
+        self.__extract = extract
 
     def add_extract(self, value):
-        self.extract.append(value)
+        self.__extract.append(value)
 
-    def extract(self):
-        for ex in self.extract:
+    def extract_list(self):
+        for ex in self.__extract:
             print(ex)
 

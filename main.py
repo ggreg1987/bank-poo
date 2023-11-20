@@ -50,8 +50,7 @@ class Main:
                     print(result)
 
                 case 4:
-                    result = self.__account.extract()
-                    print(result)
+                    self.__account.extract()
 
                 case 5:
                     print("Thanks for use DIO's Bank")
